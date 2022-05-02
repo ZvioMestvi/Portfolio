@@ -1,0 +1,56 @@
+.infoContainer {
+  padding: 30px 30px 50px 30px;
+  float: right;
+  height: 100%;
+  width: 55%;
+  background-color: #222222;
+}
+
+.infoContainer h2 {
+  display: table;
+  font-size: 2.5rem; /* 40px */
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #f7f7f7;
+  padding: 0 5px;
+  color: black;
+}
+
+.infoContainer p {
+  font-size: 1.5rem; /* 24px */
+  font-family: 'Jura', sans-serif;
+  font-weight: 300;
+  margin-top: 15px;
+  letter-spacing: 0.4px;
+}
+
+/* Skills section */
+
+.infoContainer ul li p span {
+  font-family: 'Jura', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 1px 2px 4px 2px;
+}
+
+#html {
+  color: #e44d25;
+}
+
+#css {
+  color: #33a8dd;
+}
+
+#js {
+  color: #f7e018;
+}
+
+#react {
+  color: #61dafb;
+}
+
+#bootstrap {
+  color: #840afa;
+}
