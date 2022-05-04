@@ -63,7 +63,7 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .projectsContainer {
     margin-bottom: 15px;
     width: 100%;
@@ -81,5 +81,17 @@
     height: 35px;
     width: 140px;
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .projectInfo h3 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .projectInfo p {
+    font-size: 1rem;
+    line-height: 20px;
   }
 }
