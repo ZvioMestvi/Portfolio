@@ -1,5 +1,6 @@
 .main-container {
   margin: 9em auto;
+  padding: 0 20px;
   max-width: 1200px;
 }
 
@@ -31,4 +32,44 @@
   height: 4px;
   width: 100%;
   background-color: #413e3e;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-container {
+    margin: 7em auto 4em auto;
+  }
+
+  .top-half {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading-container h1 {
+    font-size: 3.6rem;
+  }
+
+  .heading-container h1:nth-child(2) {
+    margin-top: -23px;
+  }
+
+  .divider {
+    height: 3px;
+  }
+}
+
+/* For swiper */
+.swiper {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  display: flex;
+  height: 100%;
+  width: 100%;
 }

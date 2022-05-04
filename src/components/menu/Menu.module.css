@@ -18,3 +18,14 @@
   color: black;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 800px) {
+  .menuContainer {
+    padding: 4px 0 0 6px;
+  }
+
+  .menuContainer ul li {
+    font-size: 1.3rem;
+    margin: 8px 0;
+  }
+}

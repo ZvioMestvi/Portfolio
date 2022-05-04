@@ -1,22 +1,33 @@
 import classes from './Projects.module.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Projects = props => {
+  const renderProjects = props.data.map((project, i) => {
+    return (
+      <div className={classes.projectContainer}>
+        <SwiperSlide key={project + i} id="main">
+          <div className={classes.projectInfo}>
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+          </div>
+          <div
+            className={classes.thumbnail}
+            style={{
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6) 0 0), url(${project.thumbnail})`,
+            }}
+          >
+            <button type="button">Visit Page</button>
+          </div>
+        </SwiperSlide>
+      </div>
+    );
+  });
+
   return (
     <div className={classes.projectsContainer}>
-      <div className={classes.projectContainer}>
-        <div className={classes.projectInfo}>
-          <h3>{props.data.title}</h3>
-          <p>{props.data.description}</p>
-        </div>
-        <div
-          className={classes.thumbnail}
-          style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6) 0 0), url(${props.data.thumbnail})`,
-          }}
-        >
-          <button type="button">Visit Page</button>
-        </div>
-      </div>
+      <Swiper tag="div" id="main">
+        {renderProjects}
+      </Swiper>
     </div>
   );
 };

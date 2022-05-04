@@ -54,3 +54,20 @@
 #bootstrap {
   color: #840afa;
 }
+
+@media only screen and (max-width: 700px) {
+  .infoContainer {
+    padding: 30px 20px 40px 20px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .infoContainer h2 {
+    font-size: 2rem;
+  }
+
+  .infoContainer p {
+    font-size: 1.2rem;
+    line-height: 23px;
+  }
+}

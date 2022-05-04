@@ -5,7 +5,6 @@ import maptyThumbnail from './assets/mapty-thumbnail.png';
 import gmnThumbnail from './assets/guessmynumber-thumbnail.png';
 import bankistThumbnail from './assets/bankist-thumbnail.png';
 import InfoContainer from './components/infoContainer/InfoContainer';
-import ProjectsList from './components/projectsList/ProjectsList';
 import Projects from './components/projects/Projects';
 import Menu from './components/menu/Menu';
 import './App.css';
@@ -13,7 +12,7 @@ import './App.css';
 const info = [
   {
     title: 'About Me',
-    text: " Hi, I'm Zviad Mestvirishvili, I am a junior Front End web developer from Georgia. I've been doing this for more than a year and worked on many projects. I also play guitar as a hobby and love gaming.",
+    text: " Hi, I'm Zviad Mestvirishvili, I am a junior Front-End web developer from Georgia. I've been doing this for more than a year and worked on many projects. I also play guitar as a hobby and love gaming.",
   },
   {
     title: 'Education',
@@ -49,14 +48,9 @@ const projects = [
 
 const App = () => {
   const [selected, setSelected] = useState();
-  const [selectedProject, setSelectedProject] = useState(0);
 
   const selectItem = value => {
     setSelected(value);
-  };
-
-  const selectProject = value => {
-    setSelectedProject(value);
   };
 
   return (
@@ -66,11 +60,6 @@ const App = () => {
           <h1>Zviad</h1>
           <h1>Mestvi.</h1>
         </div>
-        {selected === 'projects' ? (
-          <ProjectsList selector={selectProject} />
-        ) : (
-          ''
-        )}
       </div>
       <div className="divider"></div>
       {selected !== 0 && selected !== 1 && selected !== 'skills' ? (
@@ -80,11 +69,7 @@ const App = () => {
       ) : (
         <InfoContainer data={info[selected]} />
       )}
-      {selected === 'projects' ? (
-        <Projects data={projects[selectedProject]} />
-      ) : (
-        ''
-      )}
+      {selected === 'projects' ? <Projects data={projects} /> : ''}
       <Menu selector={selectItem} />
     </div>
   );
