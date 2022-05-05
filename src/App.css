@@ -37,12 +37,12 @@
   width: 57%;
   position: relative;
   overflow: hidden;
-  z-index: -2;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 800px) {
   .main-container {
-    margin: 5.5em auto 3.5em auto;
+    margin: 4em auto 3.5em auto;
   }
 
   .heading-container h1 {

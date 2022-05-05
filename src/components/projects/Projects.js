@@ -16,7 +16,14 @@ const Projects = props => {
               backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6) 0 0), url(${project.thumbnail})`,
             }}
           >
-            <button type="button">Visit Page</button>
+            <button
+              onClick={() => {
+                window.open(`${project.link}`, '_blank');
+              }}
+              type="button"
+            >
+              Visit Page
+            </button>
           </div>
         </SwiperSlide>
       </div>

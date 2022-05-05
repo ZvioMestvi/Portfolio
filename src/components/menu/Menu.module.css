@@ -1,4 +1,5 @@
 .menuContainer {
+  display: table;
   padding: 10px 0 0 6px;
 }
 
