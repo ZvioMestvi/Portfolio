@@ -4,13 +4,11 @@
   max-width: 1200px;
 }
 
-.top-half {
-  display: flex;
-  justify-content: space-between;
-}
-
 .heading-container {
   margin-left: 8px;
+  position: relative;
+  z-index: 100;
+  background-color: #1c1c1c;
 }
 
 .heading-container h1 {
@@ -34,14 +32,17 @@
   background-color: #413e3e;
 }
 
+.wrapper {
+  float: right;
+  width: 57%;
+  position: relative;
+  overflow: hidden;
+  z-index: -2;
+}
+
 @media only screen and (max-width: 800px) {
   .main-container {
-    margin: 7em auto 4em auto;
-  }
-
-  .top-half {
-    display: flex;
-    flex-direction: column;
+    margin: 5.5em auto 3.5em auto;
   }
 
   .heading-container h1 {
@@ -54,6 +55,10 @@
 
   .divider {
     height: 3px;
+  }
+
+  .wrapper {
+    width: 100%;
   }
 }
 
@@ -71,4 +76,15 @@
 .swiper-slide {
   display: flex;
   width: 100%;
+}
+
+/* For transitions */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }

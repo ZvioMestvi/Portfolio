@@ -2,10 +2,10 @@ import classes from './Projects.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Projects = props => {
-  const renderProjects = props.data.map((project, i) => {
+  const renderProjects = props.data.map(project => {
     return (
-      <div className={classes.projectContainer}>
-        <SwiperSlide key={project + i} id="main">
+      <div key={project.title} className={classes.projectContainer}>
+        <SwiperSlide key={project.title} id="main">
           <div className={classes.projectInfo}>
             <h3>{project.title}</h3>
             <p>{project.description}</p>

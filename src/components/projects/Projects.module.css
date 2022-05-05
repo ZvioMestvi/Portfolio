@@ -1,9 +1,12 @@
 .projectsContainer {
   display: flex;
   height: 340px;
-  width: 57%;
+  width: 100%;
   float: right;
   background-color: #222222;
+  position: relative;
+  animation: slideDown 0.4s linear forwards;
+  z-index: -1;
 }
 
 .projectContainer {
@@ -93,5 +96,15 @@
   .projectInfo p {
     font-size: 1rem;
     line-height: 20px;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }

@@ -7,32 +7,11 @@ const InfoContainer = props => {
       <p>{props.data.text}</p>
       {props.data === 'skills' ? (
         <ul>
-          <li>
-            <p>
-              HTML - <span id={classes.html}>[#########- | 90%]</span>
-            </p>
-          </li>
-          <li>
-            <p>
-              CSS / SCSS - <span id={classes.css}>[########-- | 80%]</span>
-            </p>
-          </li>
-          <li>
-            <p>
-              Javascript / jQuery -{' '}
-              <span id={classes.js}>[########-- | 80%]</span>
-            </p>
-          </li>
-          <li>
-            <p>
-              React / Redux - <span id={classes.react}>[########-- | 80%]</span>
-            </p>
-          </li>
-          <li>
-            <p>
-              Bootstrap - <span id={classes.bootstrap}>[#####----- | 50%]</span>
-            </p>
-          </li>
+          <li>HTML</li>
+          <li>CSS / SCSS</li>
+          <li>Javascript / jQuery</li>
+          <li>React / Redux</li>
+          <li>Bootstrap</li>
         </ul>
       ) : (
         ''

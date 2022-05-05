@@ -55,22 +55,29 @@ const App = () => {
 
   return (
     <div className="main-container">
-      <div className="top-half">
-        <div className="heading-container">
-          <h1>Zviad</h1>
-          <h1>Mestvi.</h1>
-        </div>
+      <div className="heading-container">
+        <h1>Zviad</h1>
+        <h1>Mestvi.</h1>
       </div>
       <div className="divider"></div>
-      {selected !== 0 && selected !== 1 && selected !== 'skills' ? (
-        ''
-      ) : selected === 'skills' ? (
-        <InfoContainer data={'skills'} />
+      {selected === 'skills' ? (
+        <div className="wrapper">
+          <InfoContainer data={'skills'} />
+        </div>
       ) : (
-        <InfoContainer data={info[selected]} />
+        ''
       )}
-      {selected === 'projects' ? <Projects data={projects} /> : ''}
-      <Menu selector={selectItem} />
+      {selected === 0 || selected === 1 ? (
+        <div className="wrapper">
+          <InfoContainer data={info[selected]} />
+        </div>
+      ) : (
+        ''
+      )}
+      <div className="wrapper">
+        {selected === 'projects' ? <Projects data={projects} /> : ''}
+      </div>
+      <Menu selected={selected} selector={selectItem} />
     </div>
   );
 };
