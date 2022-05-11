@@ -60,7 +60,7 @@ const projects = [
   {
     title: 'Compare Bikes',
     description:
-      "Compare Bikes is website for comparing two motorbike stats. Only functionality works, it doesn't have any design",
+      "Compare Bikes is website for comparing two motorbike's stats. Excuse the design, sites main focus is functionality.",
     thumbnail: compareBikes,
     link: 'https://compare-bikes.netlify.app/',
   },
