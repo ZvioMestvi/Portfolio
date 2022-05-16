@@ -30,6 +30,7 @@ const projects = [
       'Forkify is recipe searching website with over 1 million recipes. You can also upload your own recipe but it will be saved only on your device.',
     thumbnail: forkifyThumbnail,
     link: 'https://zm-forkify.netlify.app/',
+    sourceLink: 'https://github.com/ZvioMestvi/forkify-course-video',
   },
   {
     title: 'Mapty',
@@ -56,6 +57,7 @@ const projects = [
     description: 'ACME is fake shopping website.',
     thumbnail: ACMEthumbnail,
     link: 'https://acme-replica.netlify.app/',
+    sourceLink: 'https://github.com/ZvioMestvi/ACME-website',
   },
   {
     title: 'Compare Bikes',
@@ -63,6 +65,7 @@ const projects = [
       "Compare Bikes is website for comparing two motorbike's stats. Excuse the design, sites main focus is functionality.",
     thumbnail: compareBikes,
     link: 'https://compare-bikes.netlify.app/',
+    sourceLink: 'https://github.com/ZvioMestvi/Bike-comparison',
   },
 ];
 

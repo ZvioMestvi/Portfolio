@@ -24,6 +24,16 @@ const Projects = props => {
             >
               Visit Page
             </button>
+            {project.sourceLink && (
+              <button
+                onClick={() => {
+                  window.open(`${project.sourceLink}`, '_blank');
+                }}
+                type="button"
+              >
+                Source Code
+              </button>
+            )}
           </div>
         </SwiperSlide>
       </div>
