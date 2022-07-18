@@ -1,5 +1,6 @@
 import classes from './Projects.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Fragment } from 'react';
 
 const Projects = props => {
   const renderProjects = props.data.map(project => {
@@ -41,11 +42,17 @@ const Projects = props => {
   });
 
   return (
-    <div className={classes.projectsContainer}>
-      <Swiper tag="div" id="main">
-        {renderProjects}
-      </Swiper>
-    </div>
+    <Fragment>
+      <div className={classes.projectsContainer}>
+        <Swiper tag="div" id="main">
+          {renderProjects}
+        </Swiper>
+
+        <div className={classes.projectsSidenote}>
+          <p>Swipe left to view more projects...</p>
+        </div>
+      </div>
+    </Fragment>
   );
 };
 
