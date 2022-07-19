@@ -6,7 +6,6 @@ import gmnThumbnail from './assets/guessmynumber-thumbnail.png';
 import bankistThumbnail from './assets/bankist-thumbnail.png';
 import ACMEthumbnail from './assets/ACME-thumbnail.png';
 import compareBikes from './assets/compare-bikes.png';
-import arrow from './assets/arrow.svg';
 import InfoContainer from './components/infoContainer/InfoContainer';
 
 import Projects from './components/projects/Projects';
