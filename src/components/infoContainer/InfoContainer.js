@@ -12,6 +12,7 @@ const InfoContainer = props => {
           <li>Javascript / jQuery</li>
           <li>React / Redux</li>
           <li>Bootstrap</li>
+          <li>C#</li>
         </ul>
       ) : (
         ''
